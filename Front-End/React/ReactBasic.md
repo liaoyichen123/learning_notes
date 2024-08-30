@@ -69,3 +69,64 @@ React is a JavaScript library for building user interfaces, primarily for single
       </div>
     );
   }
+  ```
+
+
+## Set up a react project
+0. Install Node.js runtime
+
+  ```bash
+  # Verify npm installation
+  npm -version
+  ```
+
+
+
+1. React project init
+``` bash
+npm init react-app firstapp
+cd /firstapp
+npm start react
+#Note, "npm install react"  is incorrect.
+# Adding HOST= can expose the server to local network access. To access the server via another device may require firewall configuration
+HOST=0.0.0.0 npm start
+```
+
+## React Project Structure
+0. /node_modules
+- Contains all the modules required for the React app.
+- Automatically populated when installing npm packages.
+
+1. /public
+- Houses assets displayed in the app (e.g., logos, favicon).
+- important files
+  - **index.html**: The main HTML file where the React app is injected.
+  - **robots.txt**: Used for SEO purposes.
+  - **manifest.json**: Provides metadata for the app when installed on a device.
+ 
+
+2. /src
+- Source code files for the React app.
+- important files
+  - **App.js**: The root component of the app.
+  - **index.js**: The entry point that imports everything needed to render the app.
+  - **App.test.js, setupTests.js, reportWebVitals.js**: Related to app performance and testing.
+  - **App.css & index.css**: Stylesheets for the app components and overall application.
+
+## React Components, Modules
+---------
+
+0. **Import and Export Statements**: 
+  - **Export**: Makes a module available to other files.
+  - **Import**: Allows a module to be brought into a file for use.
+
+1. Types of Exports
+- **Default Export**: Used when the function name is the same as the file name.
+- **Named Export**: Used when the function name differs from the file name.
+
+2. Differentiating Components and Modules
+- **Components**: Typically represent a single piece of UI, like a button.
+- **Modules**: Can be thought of as a collection of components or a larger functionality.
+
+
+
